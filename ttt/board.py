@@ -4,3 +4,14 @@ def create_board(size : int=3):
 def split_board(board):
 
     return "\n".join([" ".join(i) for i in board])
+
+def update(board, sign, row, cool):
+    if board[row][cool] == "_":
+        board[row][cool] = sign
+        return board
+    print("Try agin")
+    return False
+
+
+
+
